@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Criptografando</title>
+</head>
+
+<body>
+  <form name="formCriptografia">
+    <div class="container">
+      <label for="mensagem">Insira uma mensagem para criptografar:</label>
+      <input name="mensagem" id="mensagem" placeholder="Mensagem" />
+    </div>
+
+    <div class="container">
+      <label for="criptografia">Tipo de criptografia</label>
+      <select name="criptografia" id="criptografia">
+        <option value="base64">Base64</option>
+        <option value="cifra">Cifra de César</option>
+      </select>
+    </div>
+
+    <div id="incrementoContainer">
+      <label for="incremento">Chave de codificação</label>
+      <input name="incremento" id="incremento" placeholder="Chave de codificação">
+    </div>
+
+    <div class="acao">
+      <input type="radio" name="acao" id="codificar" value="codificar" checked>
+      <label for="codificar">Codificar</label>
+      <input type="radio" name="acao" id="decodificar" value="decodificar">
+      <label for="decodificar">Decodificar</label>
+    </div>
+
+    <button type="submit">
+      Codificar Mensagem
+    </button>
+
+    <div id="resultado"></div>
+  </form>
+  <div id="container-imagem">
+  <img src="./img.png" alt="Imagem de fundo">
+  </div>
+  <script src="./criptografia.js"></script>
+
+</body>
+
+</html>
