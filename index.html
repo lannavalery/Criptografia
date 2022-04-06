@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
   <title>Criptografando</title>
 </head>
 
@@ -19,14 +22,15 @@
     <div class="container">
       <label for="criptografia">Tipo de criptografia</label>
       <select name="criptografia" id="criptografia">
+        <option value="">Selecionar</option>
         <option value="base64">Base64</option>
         <option value="cifra">Cifra de César</option>
       </select>
     </div>
 
     <div id="incrementoContainer">
-      <label for="incremento">Chave de codificação</label>
-      <input name="incremento" id="incremento" placeholder="Chave de codificação">
+      <label for="incremento">Chave de codificação:</label>
+      <input name="incremento" id="incremento" placeholder="Chave">
     </div>
 
     <div class="acao">
@@ -39,13 +43,10 @@
     <button type="submit">
       Codificar Mensagem
     </button>
-
-    <div id="resultado"></div>
+    <div id="resultado">Resultado:</div>
   </form>
-  <div id="container-imagem">
-  </div>
   <script src="./criptografia.js"></script>
-
+  <div id="container-imagem"></div>
 </body>
 
 </html>
