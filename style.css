@@ -69,6 +69,11 @@ button {
   padding: 5px 15px;
 }
 
+button:hover {
+  transition: transform 4s;
+  background-color: #612f0d;
+}
+
 #resultado {
   font-size: 25px;
   margin-top: 5px;
